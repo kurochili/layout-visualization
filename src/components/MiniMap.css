@@ -1,0 +1,30 @@
+.mini-map-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.mini-map-header {
+  padding: 8px 12px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.mini-map-container .leaflet-container {
+  border-radius: 0 0 8px 8px;
+}
+
+
+
+
+
+

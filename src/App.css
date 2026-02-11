@@ -1,0 +1,301 @@
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header {
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 2px;
+  margin-left: 10px;
+}
+
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: white;
+  color: #2c3e50;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #ecf0f1;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.btn-active {
+  background: white;
+  color: #2c3e50;
+}
+
+.btn-danger {
+  background: #e74c3c;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #c0392b;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-large {
+  padding: 12px 24px;
+  font-size: 15px;
+}
+
+.btn-small {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.error-message {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 12px 20px;
+  border-left: 4px solid #dc3545;
+  margin: 0;
+}
+
+.map-container {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.empty-state {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.empty-content {
+  text-align: center;
+  padding: 50px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.empty-content h2 {
+  margin: 0 0 12px 0;
+  color: #333;
+  font-size: 26px;
+}
+
+.empty-content p {
+  margin: 0 0 25px 0;
+  color: #666;
+  font-size: 15px;
+}
+
+.upload-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.info-panel {
+  background: #f8f9fa;
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+  border-top: 1px solid #dee2e6;
+  font-size: 13px;
+  color: #555;
+}
+
+.info-panel span {
+  font-weight: 500;
+}
+
+/* 测风塔输入面板 */
+.wind-tower-panel {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  padding: 14px 18px;
+  z-index: 1000;
+  min-width: 300px;
+}
+
+.wind-tower-panel h4 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #2c3e50;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.utm-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.utm-row {
+  display: flex;
+  gap: 12px;
+}
+
+.utm-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.input-group label {
+  font-size: 12px;
+  color: #666;
+  min-width: 55px;
+  white-space: nowrap;
+}
+
+.input-group input,
+.input-group select {
+  flex: 1;
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+  min-width: 0;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.hemisphere-select {
+  width: 100px;
+}
+
+.zone-input {
+  width: 60px !important;
+}
+
+.current-tower-info {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  font-size: 12px;
+  color: #27ae60;
+}
+
+.current-tower-info .coord-display {
+  font-weight: 600;
+  margin-top: 4px;
+  font-family: 'Consolas', 'Monaco', monospace;
+}
+
+/* Leaflet弹窗样式优化 */
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+}
+
+.leaflet-popup-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.leaflet-popup-content p {
+  margin: 4px 0;
+  font-size: 13px;
+  color: #666;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 15px;
+  }
+  
+  .header h1 {
+    font-size: 18px;
+  }
+  
+  .header-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .wind-tower-panel {
+    right: 10px;
+    top: 10px;
+    min-width: auto;
+    max-width: calc(100% - 20px);
+  }
+  
+  .info-panel {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
